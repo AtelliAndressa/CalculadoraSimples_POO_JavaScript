@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+           
+        <div id="principal">
+            <div id="calculadora">
+    
+                <div id="mostrar"> 
+                </div>
+    
+                <div id="visor">
+                </div>
+    
+                <div id="botoes">
+                    <div class="botoescal" id="botao7" onclick="inserir('7')">7</div>
+                    <div class="botoescal" id="botao8" onclick="inserir('8')">8</div>
+                    <div class="botoescal" id="botao9" onclick="inserir('9')">9</div>
+                    <div class="botoescal" id="botao+" onclick="calcular(visor.textContent, this.textContent)">+</div>
+                    <div class="botoescal" id="botao4" onclick="inserir('4')">4</div>
+                    <div class="botoescal" id="botao5" onclick="inserir('5')">5</div>
+                    <div class="botoescal" id="botao6" onclick="inserir('6')">6</div>
+                    <div class="botoescal" id="botao-" onclick="calcular(visor.textContent, this.textContent)">-</div>
+                    <div class="botoescal" id="botao1" onclick="inserir('1')">1</div>
+                    <div class="botoescal" id="botao2" onclick="inserir('2')">2</div>
+                    <div class="botoescal" id="botao3" onclick="inserir('3')">3</div>
+                    <div class="botoescal" id="botao*" onclick="calcular(visor.textContent, this.textContent)">*</div>
+                    <div class="botoescal" id="botao0" onclick="inserir('0')">0</div>
+                    <div class="botoescal" id="botaoc" onclick="apagar()">C</div>
+                    <div class="botoescal" id="botao=" onclick="resultado(visor.textContent)">=</div>
+                    <div class="botoescal" id="botao/" onclick="calcular(visor.textContent, this.textContent)">/</div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="js/main.js"></script>
+</html>
